@@ -50,9 +50,9 @@ use Dunglas\JsonApiBundle\Event\DataEvent;
 class MyEventListener
 {
     /**
-     * @param ObjectEvent $event
+     * @param DataEvent $event
      */
-    public function onPostCreate(ObjectEvent $event)
+    public function onPostCreate(DataEvent $event)
     {
         $object = $event->getObject();
 
